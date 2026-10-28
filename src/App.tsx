@@ -10,10 +10,10 @@ import { Workflow } from './pages/Workflow'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="flex min-h-screen">
+    <BrowserRouter basename="/kitakanto-kankyo-portal">
+      <div className="flex min-h-screen flex-col md:flex-row">
         <Sidebar />
-        <main className="flex-1 overflow-y-auto bg-[#f8faf9] p-8">
+        <main className="flex-1 overflow-y-auto bg-[#f8faf9] p-4 md:p-8">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/spaces" element={<Spaces />} />
